@@ -1,0 +1,14 @@
+--- 
+ - host: all
+   become: yes
+   tasks:
+    - name: Installing apt packages
+      apt:
+       name: "{{ packages }}"
+       state: present
+      vars:
+       packages:
+        - htop
+        - curl
+        - wget
+        - vim

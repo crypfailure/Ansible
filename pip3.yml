@@ -1,0 +1,15 @@
+--- 
+ - host: all
+   become: yes
+   tasks:
+    - name: Installing python packages
+      pip: 
+       executable: pip3
+       name: "{{ packages }}"
+       state: present
+      vars:
+       packages:
+        - shodan
+        - spacy
+        - twint
+        - pandas

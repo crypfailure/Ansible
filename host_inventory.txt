@@ -1,0 +1,17 @@
+# this is a host inventory file
+
+# username@IP
+msfadmin@192.168.0.109
+
+# IP
+#192.168.227.x
+
+# group-1
+[qa]
+toor@qa-1
+toor@qa-2
+
+# group-2
+[blockchain]
+dev@blockchain-1
+dev@blockchain-2

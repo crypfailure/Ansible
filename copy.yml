@@ -1,0 +1,11 @@
+--- 
+ - host: all
+   become: yes
+   tasks:
+    - name: copying files
+      copy:
+       src: /etc/passwd
+       dest: /tmp/
+       owner: root
+       group: root
+       mode: u=rw,g=r,o=r
