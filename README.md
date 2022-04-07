@@ -1,1 +1,4 @@
 # Ansible
+Ansible is a configuration management tool that is designed to automate controlling servers for administrators and operations teams. With ansible we can use a single central server to control and configure many different remote systems using `SSH` and `python` as only requirements. <br>
+<br/>
+Ansible carries out tasks on servers that it manages based on task definitions. These tasks invoke built-in and community maintained ansible modules using small snippets of YAML for each task. As the number and variety of systems that we manage with a single ansible control node become more complex, it makes sense to group tasks together into `Ansible Playbooks`. Using playbooks eliminates the need to run many individual tasks on remote systems, instead letting us configure entire environments at once with a single file.
